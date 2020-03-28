@@ -9,10 +9,6 @@ class BoardsController < ApplicationController
     @board = Board.new(board_params)
     @board.save
   end
-  def destroy
-    @board = Board.find(params[:id])   
-    @board.destroy
-  end
   private
     def board_params
       params.require(:board).permit(:title, :caption, :image)
