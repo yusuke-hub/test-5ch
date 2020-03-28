@@ -3,9 +3,17 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .boards-list {
   margin-bottom: 50px;
+  padding: 45px 70px;
+}
+.boards-list:nth-child(odd) {
+  background-color: #fff;
+}
+.boards-list:nth-child(even) {
+  background-color: rgb(246, 246, 246);
 }
 #title {
   font-size: 3.2rem;
+  font-weight: bold;
 }
 #caption {
   font-size: 1.8rem;
