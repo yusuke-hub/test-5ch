@@ -1,5 +1,9 @@
 - @boards.each do |board|
   .boards-list
-    = board.title
-    = board.caption
-    = attachment_image_tag board, :image
+    #title
+      = board.title 
+    br/
+    #caption
+      = board.caption
+    #created_at
+      = board.created_at
