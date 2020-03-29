@@ -8,7 +8,7 @@ ja:
     attributes:
       user:
         id: ID
-        name: 匿名
+        name: ハンドル名
         email: メールアドレス
         password: パスワード
       post:
