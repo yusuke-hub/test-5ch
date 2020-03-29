@@ -10,16 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_29_022800) do
+ActiveRecord::Schema.define(version: 2020_03_29_092925) do
 
   create_table "boards", force: :cascade do |t|
     t.string "title"
     t.text "caption"
-    t.text "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "user_id"
     t.integer "category_id"
+    t.text "image_id"
   end
 
   create_table "categories", force: :cascade do |t|

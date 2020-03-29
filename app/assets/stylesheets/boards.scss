@@ -1,6 +1,8 @@
 // Place all the styles related to the boards controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// 掲示板リスト
 .boards-list {
   margin-bottom: 50px;
   padding: 45px 70px;
@@ -21,6 +23,19 @@
 #created_at {
   text-align: right;
 }
-#name {
+#created_at #name {
   color: #0c860c;
+}
+#image {
+  
+}
+
+// スレッドを立てる
+.board-content .field input,
+.board-content .field #text-area {
+  width: 70%;
+  height: 36px;
+}
+.board-content .field #text-area {
+  height: 120px;
 }

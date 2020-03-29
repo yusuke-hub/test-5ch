@@ -43,18 +43,20 @@ Board.create!(
       user_id: '1',
       title: 'hogehoge',
       caption: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus quos quidem tenetur aut perspiciatis accusamus, laboriosam odio velit! Reprehenderit consequatur quod laborum, at repellat voluptatibus ab quae impedit asperiores nihil?',
-      image: 'point-finger.jpg'
+      image_id: nil
     },
     {
       user_id: '2',
       category_id: '2',
       title: 'hugahuga',
-      caption: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus quos quidem tenetur aut perspiciatis accusamus, laboriosam odio velit! Reprehenderit consequatur quod laborum, at repellat voluptatibus ab quae impedit asperiores nihil?'
+      caption: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus quos quidem tenetur aut perspiciatis accusamus, laboriosam odio velit! Reprehenderit consequatur quod laborum, at repellat voluptatibus ab quae impedit asperiores nihil?',
+      image_id: nil
     },
     {
       user_id: '3',
       title: 'hoeghuga',
-      caption: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus quos quidem tenetur aut perspiciatis accusamus, laboriosam odio velit! Reprehenderit consequatur quod laborum, at repellat voluptatibus ab quae impedit asperiores nihil?'
+      caption: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus quos quidem tenetur aut perspiciatis accusamus, laboriosam odio velit! Reprehenderit consequatur quod laborum, at repellat voluptatibus ab quae impedit asperiores nihil?',
+      image_id: nil
     }
   ]
 )

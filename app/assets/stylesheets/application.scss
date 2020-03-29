@@ -74,7 +74,8 @@ a:active {
 .field label {
   font-size: 1.8rem;
 }
-.field input {
+.field input,
+#text-area {
   width: 36%;
   margin-bottom: 24px;
 }
