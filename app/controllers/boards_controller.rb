@@ -4,6 +4,7 @@ class BoardsController < ApplicationController
   end
   def show
     @board = Board.find(params[:id])
+    @post = Post.new
   end
   def new
     @board = Board.new

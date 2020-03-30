@@ -61,3 +61,11 @@
 .larger-fsz {
   font-size: 1.4rem;
 }
+// レスポンス投稿フォーム
+.post-form input,
+.post-form #text-area {
+  width: 100%;
+}
+.post-form #text-area {
+  height: 120px;
+}
