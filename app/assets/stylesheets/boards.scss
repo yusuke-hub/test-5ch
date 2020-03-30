@@ -2,6 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.contribute-frame {
+  background-color: #fff;
+  padding: 12px 24px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+}
 // 掲示板リスト
 .boards-list {
   margin-bottom: 50px;
@@ -47,10 +52,6 @@
 .config-bgc {
   background-color: #f2f3f7;
   color: #485269;
-  padding: 12px 24px;
-}
-.contribute-frame {
-  background-color: #efefef;
   padding: 12px 24px;
 }
 .contribute-frame #board-created_at {

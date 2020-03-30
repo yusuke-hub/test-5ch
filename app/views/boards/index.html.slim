@@ -1,17 +1,18 @@
-- @boards.each do |board|
-  .boards-list
-    - if board.image != nil?
-      #board-image.line-up
-        = attachment_image_tag board, :image, :fill, 60, 60
-    #board-title.line-up
-      = link_to board.title, board_path(board.id)
-    br/
-    #contribure-content.mt-4
-      = board.caption
-    #board-created_at.mt-3
-      span#author-name
-        = board.user.name
-      span 
-        | &nbsp;    
-      = board.created_at
+.contribute-frame
+  - @boards.each do |board|
+    .boards-list
+      - if board.image != nil?
+        #board-image.line-up
+          = attachment_image_tag board, :image, :fill, 60, 60
+      #board-title.line-up
+        = link_to board.title, board_path(board.id)
+      br/
+      #contribure-content.mt-4
+        = board.caption
+      #board-created_at.mt-3
+        span#author-name
+          = board.user.name
+        span 
+          | &nbsp;    
+        = board.created_at
 
