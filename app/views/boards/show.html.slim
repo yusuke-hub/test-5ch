@@ -1,0 +1,11 @@
+#title
+  = @board.title
+.board-detail
+  #created_at
+    span#name 
+      = @board.user.name
+    span
+      | &nbsp;
+    = @board.created_at  
+  #caption
+    = @board.caption
