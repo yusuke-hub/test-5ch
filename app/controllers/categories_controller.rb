@@ -5,6 +5,7 @@ class CategoriesController < ApplicationController
   def create 
     @category = Category.new(category_params)
     @category.save!
+    redirect_to new_board_path
   end
   private
     def category_params

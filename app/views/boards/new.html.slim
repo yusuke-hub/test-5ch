@@ -4,6 +4,13 @@
       | スレッドを立てる
   = form_for @board do |f|
     .field
+      = f.label :カテゴリ
+      br
+      = f.select :category_id
+      = f.fields_for @category do |c|
+        / = c.select :name 
+        = c.text_field :name
+      br  
       = f.label :title
       br
       = f.text_field :title
@@ -17,4 +24,5 @@
     .field  
       = f.attachment_field :image
       br
+
       = f.submit 'スレッドを立てる', class: 'btn btn-outline-primary'

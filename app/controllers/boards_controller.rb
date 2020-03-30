@@ -9,6 +9,7 @@ class BoardsController < ApplicationController
   end
   def new
     @board = Board.new
+    @category = Category.new
   end
   def create
     @board = Board.new(board_params)
