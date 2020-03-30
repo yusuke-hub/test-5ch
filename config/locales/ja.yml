@@ -11,6 +11,7 @@ ja:
         name: ハンドル名
         email: メールアドレス
         password: パスワード
+        password_confirmation: パスワード(確認)
       post:
         content: 内容
       board:
