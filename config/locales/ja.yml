@@ -10,6 +10,7 @@ ja:
         id: ID
         name: ハンドル名
         email: メールアドレス
+        admin: 管理者権限
         password: パスワード
         password_confirmation: パスワード(確認)
       post:
