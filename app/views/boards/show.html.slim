@@ -1,5 +1,7 @@
 .config-bgc#board-title
   = @board.title
+  span  
+    = @posts.count
   .contribute-frame.mt-5.larger-fsz
     #board-created_at
       span#board-id
@@ -25,13 +27,14 @@
   - if @posts.present?
     - @posts.each do |post| 
       .contribute-frame.my-5.larger-fsz
-        span#post-id
-          = post.id
-          | &nbsp;
-        span#author-name  
-          = post.user.name
-        span
-          | &nbsp;  
-        = post.created_at
+        #created_at
+          span#post-id
+            = post.id
+            | &nbsp;
+          span#author-name  
+            = post.user.name
+          span
+            | &nbsp;  
+          = post.created_at
         #post-content
           = post.content

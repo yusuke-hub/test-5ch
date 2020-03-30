@@ -7,6 +7,12 @@
   padding: 12px 24px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
 }
+#board-created_at {
+  float: left;
+}
+.boards-list #board-created_at {
+  float: right;
+}
 // 掲示板リスト
 .boards-list {
   margin-bottom: 50px;
@@ -31,9 +37,6 @@
 #contribure-content {
   font-size: 1.8rem;
 }
-#board-created_at {
-  text-align: right;
-}
 #author-name {
   color: #0c860c;
 }
@@ -53,9 +56,6 @@
   background-color: #f2f3f7;
   color: #485269;
   padding: 12px 24px;
-}
-.contribute-frame #board-created_at {
-  float: left;
 }
 #board-id,
 #post-id {
