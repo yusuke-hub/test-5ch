@@ -13,6 +13,12 @@
 .boards-list:nth-child(even) {
   background-color: rgb(246, 246, 246);
 }
+.line-up {
+  display: inline-block;
+}
+#board-image {
+  margin-right: 12px;
+}
 #board-title {
   font-size: 3.2rem;
   font-weight: bold;
