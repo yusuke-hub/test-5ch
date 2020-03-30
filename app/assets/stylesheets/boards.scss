@@ -13,20 +13,18 @@
 .boards-list:nth-child(even) {
   background-color: rgb(246, 246, 246);
 }
-#title {
+#board-title {
   font-size: 3.2rem;
   font-weight: bold;
 }
-#caption {
+#board-caption {
   font-size: 1.8rem;
 }
-#created_at {
+#board-created_at {
   text-align: right;
 }
-#created_at #name {
+#board-created_at #name {
   color: #0c860c;
-}
-#image {
 }
 
 // スレッドを立てる

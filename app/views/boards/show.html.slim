@@ -1,11 +1,11 @@
-#title
+#board-title
   = @board.title
 .board-detail
-  #created_at
-    span#name 
+  #board-created_at
+    span#board-name 
       = @board.user.name
     span
       | &nbsp;
     = @board.created_at  
-  #caption
+  #board-caption
     = @board.caption

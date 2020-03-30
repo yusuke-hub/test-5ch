@@ -1,15 +1,15 @@
 - @boards.each do |board|
   .boards-list
-    #title
-      = board.title 
+    #board-title
+      = link_to board.title, board_path(board.id)
     br/
-    #caption
+    #board-caption
       = board.caption
-    #created_at
+    #board-created_at
       span#name
         = board.user.name
       span 
         | &nbsp;
       = board.created_at
-    #image
+    #board-image
       = attachment_image_tag board, :image, :fill, 200, 150
