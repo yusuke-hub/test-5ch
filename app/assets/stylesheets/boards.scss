@@ -23,13 +23,13 @@
   font-size: 3.2rem;
   font-weight: bold;
 }
-#board-caption {
+#contribure-content {
   font-size: 1.8rem;
 }
 #board-created_at {
   text-align: right;
 }
-#board-created_at #board-name {
+#author-name {
   color: #0c860c;
 }
 
@@ -46,16 +46,18 @@
 // スレッド詳細画面
 .config-bgc {
   background-color: #f2f3f7;
+  color: #485269;
   padding: 12px 24px;
 }
-.board-detail {
+.contribute-frame {
   background-color: #efefef;
   padding: 12px 24px;
 }
-.board-detail #board-created_at {
+.contribute-frame #board-created_at {
   float: left;
 }
-#board-id {
+#board-id,
+#post-id {
   font-weight: bold;
 }
 .larger-fsz {
@@ -67,5 +69,5 @@
   width: 100%;
 }
 .post-form #text-area {
-  height: 120px;
+  height: 100px;
 }

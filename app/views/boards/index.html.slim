@@ -6,10 +6,10 @@
     #board-title.line-up
       = link_to board.title, board_path(board.id)
     br/
-    #board-caption.mt-4
+    #contribure-content.mt-4
       = board.caption
     #board-created_at.mt-3
-      span#board-name
+      span#author-name
         = board.user.name
       span 
         | &nbsp;    

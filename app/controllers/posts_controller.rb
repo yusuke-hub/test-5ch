@@ -5,6 +5,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     @post.save!
+    redirect_to board_path(@post.board_id)
   end
   def show
     @post = Post.find(params[:id])
