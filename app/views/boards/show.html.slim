@@ -15,14 +15,14 @@
     br  
     #contribure-content
       = @board.caption
-
-  .post-form.mt-5
-      = form_for @post do |f|
-        = f.text_field :content, id: 'text-area'
-        = f.hidden_field :user_id, :value => current_user.id
-        = f.hidden_field :board_id, :value => @board.id
-        br/
-        = f.submit "レスを送信する", class:'btn btn-outline-primary'
+  - if user_signed_in?
+    .post-form.mt-5
+        = form_for @post do |f|
+          = f.text_field :content, id: 'text-area'
+          = f.hidden_field :user_id, :value => current_user.id
+          = f.hidden_field :board_id, :value => @board.id
+          br/
+          = f.submit "レスを送信する", class:'btn btn-outline-primary'
 
   - if @posts.present?
     - @posts.each do |post| 
