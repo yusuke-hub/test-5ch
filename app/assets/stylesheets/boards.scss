@@ -23,7 +23,7 @@
 #board-created_at {
   text-align: right;
 }
-#board-created_at #name {
+#board-created_at #board-name {
   color: #0c860c;
 }
 
@@ -35,4 +35,23 @@
 }
 .board-content .field #text-area {
   height: 120px;
+}
+
+// スレッド詳細画面
+.config-bgc {
+  background-color: #f2f3f7;
+  padding: 12px 24px;
+}
+.board-detail {
+  background-color: #efefef;
+  padding: 12px 24px;
+}
+.board-detail #board-created_at {
+  float: left;
+}
+#board-id {
+  font-weight: bold;
+}
+.larger-fsz {
+  font-size: 1.4rem;
 }
