@@ -10,13 +10,16 @@ Rails.application.routes.draw do
     passwords:     'users/passwords',
     registrations: 'users/registrations'
   }  
+  
+  root :to => 'boards#index'
+  resources :users
+  resources :boards, only:[:show, :new, :create, :destroy]
+  resources :categories, only:[:create, :destroy]
+  resources :posts, only:[:show, :new, :create, :destroy]
+
   namespace :admin do
     resources :users, only:[:index, :destroy]
     resources :boards, only:[:index, :destroy]
     resources :categories, only:[:index, :create, :destroy]
   end
-  root :to => 'boards#index'
-  resources :boards, only:[:show, :new, :create, :destroy]
-  resources :categories, only:[:create, :destroy]
-  resources :posts, only:[:show, :new, :create, :destroy]
 end
