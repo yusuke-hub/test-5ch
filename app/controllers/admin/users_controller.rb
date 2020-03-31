@@ -1,6 +1,9 @@
 class Admin::UsersController < ApplicationController
   def index
     @users = User.all
+     def confirm_admin(user)
+      user.where(admin: true).exists?
+     end
   end
   def new
     @user = User.new
@@ -10,7 +13,7 @@ class Admin::UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      redirect_to boards_path, notice: "ユーザー「#{@user.name}さん」を登録しました"
+      redirect_to admin_users_path, notice: "ユーザー「#{@user.name}さん」を登録しました"
     else
       render :new
     end
