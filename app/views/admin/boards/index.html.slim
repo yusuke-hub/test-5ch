@@ -15,5 +15,9 @@
         span 
           | &nbsp;    
         = board.created_at
+      削除リンク
+      #delete-link
+        = link_to admin_board_path, method::delete, data: {confirm: "スレッド#{board.title}を削除してよろしいですか?"}, class: 'fas fa-trash'
+
         
 

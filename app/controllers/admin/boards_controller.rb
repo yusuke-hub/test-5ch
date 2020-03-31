@@ -7,4 +7,10 @@ class Admin::BoardsController < ApplicationController
     @post = Post.new
     @posts = Post.all
   end
+  def destroy 
+    @board = Board.find(params[:id])
+    if @boards.destroy
+      redirect_to admin_boards_path, n
+    end
+  end
 end
