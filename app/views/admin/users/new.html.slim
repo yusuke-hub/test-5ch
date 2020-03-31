@@ -5,7 +5,7 @@
   = form_for @user, url: admin_users_path do |f|
     / = render "devise/shared/error_messages", resource: resource
     .field
-      = f.label :name
+      = f.label :admin
       br
       = f.text_field :name, autofocus: true, autocomplete: "name"
     .field

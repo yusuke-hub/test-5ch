@@ -1,0 +1,18 @@
+.view-content
+  #view-title
+    h2 ユーザー一覧
+  table.table.table-hover
+    thead
+      tr
+        th  colspan="1"
+        th  ハンドル名
+        th  メールアドレス
+        th  colspan="3"
+    tbody
+      - @users.each do |user|
+        tr
+          td = user.id
+          td = user.name
+          td = user.email
+          td = link_to '詳細', admin_user_path(user), class: 'btn btn-success text-light'
+          td = link_to '削除', admin_users_path, class: 'btn btn-danger text-light'
