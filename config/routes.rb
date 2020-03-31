@@ -11,6 +11,8 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }  
   namespace :admin do
+    resources :boards
+    resources :categories
     resources :users
   end
   root :to => 'boards#index'
