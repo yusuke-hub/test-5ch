@@ -6,6 +6,9 @@ ja:
       board: 掲示板
       category: カテゴリ
     attributes:
+      admin:
+        email: メールアドレス
+        password: パスワード
       user:
         id: ID
         name: ハンドル名
