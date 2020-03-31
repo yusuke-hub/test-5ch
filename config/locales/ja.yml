@@ -9,6 +9,7 @@ ja:
       admin:
         email: メールアドレス
         password: パスワード
+        remember_me: ログイン状態を保存する
       user:
         id: ID
         name: ハンドル名
@@ -16,6 +17,7 @@ ja:
         admin: 管理者名
         password: パスワード
         password_confirmation: パスワード(確認)
+        remember_me: ログイン状態を保存する
       post:
         content: 内容
       board:
