@@ -11,13 +11,12 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }  
   namespace :admin do
-    root :to => 'boards#index'
-    resources :boards
-    resources :categories
-    resources :users
+    resources :users, only:[:index, :destroy]
+    resources :boards, only:[:index, :destroy]
+    resources :categories, only:[:index, :create, :destroy]
   end
   root :to => 'boards#index'
-  resources :posts, only:[:show, :new, :create, :destroy]
   resources :boards, only:[:show, :new, :create, :destroy]
   resources :categories, only:[:create, :destroy]
+  resources :posts, only:[:show, :new, :create, :destroy]
 end
