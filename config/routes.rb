@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  namespace :admin do
-    get 'users/index'
-  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   devise_for :admins, controllers: {
     sessions:      'admins/sessions',
@@ -14,11 +11,11 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }  
   namespace :admin do
+    root :to => 'boards#index'
     resources :boards
     resources :categories
     resources :users
   end
-  root :to => 'boards#index'
   resources :posts, only:[:show, :new, :create, :destroy]
   resources :boards, only:[:show, :new, :create, :destroy]
   resources :categories, only:[:create, :destroy]
