@@ -54,7 +54,11 @@ a:active {
   padding: 12px 24px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
 }
-
+.view-content table {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
 // ヘッダー
 #header {
   padding: 10px 20px;

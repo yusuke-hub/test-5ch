@@ -11,7 +11,7 @@ header#header
       li
         = link_to 'ユーザー一覧', admin_users_path, class: 'nav-link'
       li
-        = link_to 'カテゴリー作成', new_admin_category_path, class: 'nav-link'
+        = link_to 'カテゴリー作成', admin_categories_path, class: 'nav-link'
       li
         = link_to 'ログアウト', destroy_admin_session_path, method: :delete, class: 'nav-link'
     - else
