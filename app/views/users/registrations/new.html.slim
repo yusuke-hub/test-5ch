@@ -1,9 +1,7 @@
-= render 'layouts/a-header'
-
 .view-content
   #view-title
     h2
-      | ユーザー登録
+      | 新規登録
   = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
     = render "devise/shared/error_messages", resource: resource
     .field
@@ -31,4 +29,4 @@
     .field
       = f.submit "アカウント登録"
       br
-      = render "devise/shared/links"
+      = render "users/shared/links"
