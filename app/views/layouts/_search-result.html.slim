@@ -1,0 +1,27 @@
+  - if @results.present?
+    .contribute-frame
+    - @results.each do |rslt|
+      .boards-list
+        #board-title.line_up
+          = link_to rslt.title, board_path(board.id)
+        br/
+        #contribute-content.mt-4
+          = rslt.caption
+        / #board-created_at.mt-3
+        /   span#author-name
+        /   = rslt.user.name  
+        / span
+        /   | &nbsp;
+        / = rslt.created_at
+      .contribute-frame.my-5.larger-fsz
+        / #created_at
+        /   span#post-id
+        /     = rslt.content.id
+        /     | &nbsp;
+        /   span#author-name  
+        /     = rslt.content.user.name
+        /   span
+        /     | &nbsp;  
+        /   = rslt.content.created_at
+        #post-content
+          = post.content   
