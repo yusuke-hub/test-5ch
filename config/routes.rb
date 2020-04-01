@@ -13,10 +13,11 @@ Rails.application.routes.draw do
   
   root :to => 'boards#index'
   resources :users
-  resources :boards, only:[:show, :new, :create, :destroy]
+  resources :boards, only:[:show, :new, :create, :destroy, :search, :result]
   resources :categories, only:[:create, :destroy]
   resources :posts, only:[:show, :new, :create, :destroy]
-
+  get '/search', to: 'boards#search', as: 'search'  
+  get '/search/result', to: 'boards#result', as: 'search_result'  
   namespace :admin do
     resources :users, only:[:index, :destroy]
     resources :boards, only:[:index, :destroy]

@@ -8,15 +8,6 @@ class ApplicationController < ActionController::Base
   def after_sign_out_path_for(resource)
     new_user_session_path
   end
-
-  def serarch_result
-    @search_form = ContributionSearchForm.new(params[:search])
-    @contributions = @search_form.search
-    if params[:search]
-      @results = @contributions.result(distinct: true)
-    end
-  end
-
   protected
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys:[:name])
