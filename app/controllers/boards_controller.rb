@@ -7,7 +7,7 @@ class BoardsController < ApplicationController
     @board = Board.find(params[:id])
     @post = Post.new
     @posts = Post.all
-    @search = ContributionSearchForm.new(params[:search])    
+    @search = ContributionSearchForm.new  
   end
   def new
     @board = Board.new
@@ -32,7 +32,4 @@ class BoardsController < ApplicationController
     def board_params
       params.require(:board).permit(:user_id, :title, :caption, :image, :category_id)
     end
-    def search_params
-     params.permit(:title, :caption, :content)
-    end    
 end

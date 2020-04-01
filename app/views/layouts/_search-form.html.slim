@@ -1,5 +1,5 @@
 = form_for @search, as: 'search', url: search_path, html:{method: :get} do |f|
-  = f.search_field :title
-  = f.search_field :caption
-  = f.search_field :content
+  = f.text_field :title
+  = f.text_field :caption
+  = f.text_field :content
   = f.submit "検索"
