@@ -20,7 +20,8 @@ Rails.application.routes.draw do
   get '/search/result', to: 'boards#result', as: 'search_result'  
   namespace :admin do
     resources :users, only:[:index, :destroy]
-    resources :boards, only:[:index, :destroy]
+    resources :boards, only:[:index, :show, :destroy]
+    resources :posts, only:[ :destroy]
     resources :categories do
       patch :toggle_status
     end

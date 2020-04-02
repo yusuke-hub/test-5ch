@@ -38,3 +38,6 @@
           = post.created_at
         #post-content
           = post.content
+        #delete-link
+          = link_to admin_post_path(post), method: :delete, data: {confirm: "このレスを削除して、よろしいですか?"}
+            i.fas.fa-trash          

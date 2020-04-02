@@ -5,7 +5,7 @@
         #board-image.line-up
           = attachment_image_tag board, :image, :fill, 60, 60
       #board-title.line-up
-        = link_to board.title, board_path(board.id)
+        = link_to board.title, admin_board_path(board.id)
       br/
       #contribure-content.mt-4
         = board.caption
@@ -16,7 +16,7 @@
           | &nbsp;    
         = board.created_at
         #delete-link
-          = link_to admin_board_path(board), method: :delete, data: {confirm: "スレッド「#{board.title}」を削除してよろしいですか?"}
+          = link_to admin_board_path(board), method: :delete, data: {confirm: "スレッド「#{board. title}」を削してろしいですか?"}
             i.fas.fa-trash
 
         
