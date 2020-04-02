@@ -1,11 +1,9 @@
 class Admin::CategoriesController < ApplicationController
   def index 
+    @category = Category.new
     @categories = Category.all
   end
-  def new
-    @category = Category.new
-  end
-  def create 
+def create 
     @category = Category.new(category_params)
     @category.save!
     redirect_to admin_categories_path

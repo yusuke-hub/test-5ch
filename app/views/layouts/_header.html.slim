@@ -14,9 +14,9 @@ header#header
         = link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'nav-link'
     - elsif admin_signed_in?
       li
-        = link_to 'ユーザー一覧', admin_users_path, class: 'nav-link'
+        = link_to 'ユーザー管理', admin_users_path, class: 'nav-link'
       li
-        = link_to 'カテゴリー作成', admin_categories_path, class: 'nav-link'
+        = link_to 'カテゴリー管理', admin_categories_path, class: 'nav-link'
       li
         = link_to 'ログアウト', destroy_admin_session_path, method: :delete, class: 'nav-link'        
     - else

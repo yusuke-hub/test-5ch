@@ -1,6 +1,12 @@
 .view-content
   #view-title
     h2 カテゴリ管理
+  .field  
+    = form_for @category, url: admin_categories_path(@category.id) do |f|
+      .field
+        = f.text_field :name
+        br/
+        = f.submit '保存する'
   table.table.table-hover
     thead
       tr

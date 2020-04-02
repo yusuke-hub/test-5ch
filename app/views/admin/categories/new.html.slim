@@ -1,9 +1,0 @@
-.view-content
-  #view-title
-    h2 カテゴリ作成
-  = form_for @category, url: admin_categories_path(@category.id) do |f|
-    .field
-      = f.text_field :name
-      br/
-      = f.submit '保存する'
-    
