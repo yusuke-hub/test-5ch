@@ -1,0 +1,6 @@
+- if var.errors.any?
+  #error_explanation
+    ul
+      - var.errors.full_messages.each do |msg|
+        li
+          = msg              

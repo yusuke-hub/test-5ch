@@ -26,3 +26,5 @@
         br  
     .field
       = f.submit 'スレッドを立てる', class: 'btn btn-outline-primary'
+  = render partial: "layouts/error-msg", locals: {var: @board}
+
