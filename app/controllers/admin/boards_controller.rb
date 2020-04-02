@@ -10,7 +10,7 @@ class Admin::BoardsController < ApplicationController
   def destroy 
     @board = Board.find(params[:id])
     if @board.destroy
-      redirect_to admin_boards_path
+      redirect_to admin_boards_path, notice:'スレッドを削除しました'
     end
   end
 end

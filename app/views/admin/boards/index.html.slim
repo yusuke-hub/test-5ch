@@ -1,3 +1,4 @@
+= render 'layouts/flash'
 .contribute-frame
   - @boards.each do |board|
     .boards-list
@@ -16,7 +17,7 @@
           | &nbsp;    
         = board.created_at
         #delete-link
-          = link_to admin_board_path(board), method: :delete, data: {confirm: "スレッド「#{board. title}」を削してろしいですか?"}
+          = link_to admin_board_path(board), method: :delete, data: {confirm: "スレッド「#{board. title}」を削除してろしいですか?"}
             i.fas.fa-trash
 
         

@@ -6,7 +6,7 @@ class Admin::CategoriesController < ApplicationController
   def create 
     @category = Category.new(category_params)
     @category.save!
-    redirect_to admin_categories_path, flash: {notice: 'カテゴリを作成しました'}
+    redirect_to admin_categories_path, notice: 'カテゴリを作成しました'
   end
 	def toggle_status
 		@category = Category.find(params[:category_id])
