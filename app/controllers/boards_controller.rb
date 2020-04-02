@@ -1,7 +1,7 @@
 class BoardsController < ApplicationController
   def index
     @boards = Board.all
-    @search = ContributionSearchForm.new(params[:search])    
+    @search = ContributionSearchForm.new
   end
   def show
     @board = Board.find(params[:id])

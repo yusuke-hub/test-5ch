@@ -1,8 +1,8 @@
 .contribute-frame
   - if @results.present?
-    - binding.pry
     - @results.each do |rslt|
       .boards-list
+      - binding.pry
         #board-title.line_up
           = link_to rslt.title, board_path(board.id)
         br/
