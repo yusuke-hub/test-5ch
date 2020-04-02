@@ -29,22 +29,6 @@ User.create!(
     }
   ]
 )
-Category.create!(
-  [
-    {
-      name: '経済',
-      status: '0'
-    },
-    {
-      name: 'エンタメ',
-      status: '1'
-    },
-    {
-      name: '政治',
-      status: '2'
-    }
-  ]
-)
 Board.create!(
   [
     {
