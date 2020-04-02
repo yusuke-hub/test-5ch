@@ -10,7 +10,7 @@ class Admin::BoardsController < ApplicationController
   def destroy 
     @board = Board.find(params[:id])
     if @boards.destroy
-      redirect_to admin_boards_path, n
+      redirect_to admin_boards_path
     end
   end
 end

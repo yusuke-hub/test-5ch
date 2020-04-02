@@ -1,0 +1,14 @@
+  = form_for @search, as: 'search', url: search_path, html:{method: :get} do |f|
+    = f.label :スレッドタイトル
+    br/
+    = f.search_field :title
+    br/
+    = f.label :スレッド文
+    br/
+    = f.search_field :caption
+    br/
+    = f.label :レス
+    br/
+    = f.search_field :content
+    br
+    = f.submit "検索", class: 'mt-3 mb-5'

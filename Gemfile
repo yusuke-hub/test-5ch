@@ -68,7 +68,6 @@ gem "refile-mini_magick"
 gem 'slim-rails'
 gem 'html2slim'
 gem 'pry-byebug'
-gem 'ransack'
 gem 'rails-i18n', '~> 5.1'
 gem 'jquery-rails'
 gem 'select2-rails'

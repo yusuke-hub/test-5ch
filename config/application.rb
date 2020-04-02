@@ -18,6 +18,6 @@ module Test5ch
 
     config.i18n.default_locale = :ja
     config.time_zone = 'Tokyo'
-    config.action_controller.permit_all_parameters = false
+    config.action_controller.permit_all_parameters = true    
   end
 end
