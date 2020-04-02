@@ -1,24 +1,14 @@
-# README
+# 5ch
+匿名掲示板、5ちゃんねるを目指して、作ったアプリケーションです！
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### 👤テストユーザー
+メールアドレス: test1@test.com / パスワード: 111111
+### ⚙️ 管理者
+メールアドレス: admin@admin.com / パスワード: adminadmin
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#💡主な機能
+### ○ ログイン機能 
+### ◯ 閲覧・投稿機能
+### ◯ スレッド機能
+### △ カテゴリ設定
+### △ 検索機能
