@@ -6,7 +6,7 @@ class BoardsController < ApplicationController
   def show
     @board = Board.find(params[:id])
     @post = Post.new
-    @posts = Post.all
+    @posts = Post.where(board_id: @board)
     @search = ContributionSearchForm.new  
   end
   def new
@@ -21,7 +21,7 @@ class BoardsController < ApplicationController
   def search
     @search = ContributionSearchForm.new(params[:search])
     @q = @search.search
-    if params[:search]
+    if @q.present?
       @results = @q
     end
   end
