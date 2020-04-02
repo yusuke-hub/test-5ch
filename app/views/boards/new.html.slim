@@ -6,11 +6,6 @@
     h2
       | スレッドを立てる
   = form_for @board do |f|
-    .field
-      = f.label :カテゴリ
-      br/
-      = f.select :category_id, Category.all.map{|t| [t.name, t.id]}, {inclede_hidden: false}, {class: 'sample_select2', multiple: true}
-      br  
     .field  
       = f.label :title
       br
@@ -22,8 +17,12 @@
       = f.text_area :caption, id: 'text-area'
       br
       = f.hidden_field :user_id, :value => current_user.id
-    .field  
-      = f.attachment_field :image
-      br
-
+    #options.clearfix.mb-3
+      .line-up
+        = f.attachment_field :image
+      .line-up
+        = f.label :カテゴリ
+        = f.select :category_id, Category.all.map{|t| [t.name, t.id]}, {include_hidden: false}, {class: 'sample_select2', multiple: true}
+        br  
+    .field
       = f.submit 'スレッドを立てる', class: 'btn btn-outline-primary'

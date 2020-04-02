@@ -2,7 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
 #board-created_at {
   float: left;
 }
@@ -21,7 +20,7 @@
   background-color: rgb(246, 246, 246);
 }
 .line-up {
-  display: inline-block;
+  display: inline;
 }
 #board-image {
   margin-right: 12px;
@@ -45,6 +44,10 @@
 }
 .board-content .field #text-area {
   height: 120px;
+}
+#options {
+  height: 100px;
+  text-align: center;
 }
 
 // スレッド詳細画面
