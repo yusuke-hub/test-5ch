@@ -1,3 +1,6 @@
+
+= javascript_include_tag 'boards.js'
+
 .board-content
   #view-title         
     h2
@@ -5,7 +8,10 @@
   = form_for @board do |f|
     .field
       = f.label :カテゴリ
+      br/
+      = f.select :category_id, Category.all.map{|t| [t.name, t.id]}, {inclede_hidden: false}, {class: 'sample_select2', multiple: true}
       br  
+    .field  
       = f.label :title
       br
       = f.text_field :title

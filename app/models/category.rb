@@ -1,5 +1,5 @@
 class Category < ApplicationRecord
-  belongs_to :board
+  has_many :boards
 	validates :name, presence: true, uniqueness: true
 	enum status: { 無効: 0, 有効: 1}
 
