@@ -5,14 +5,16 @@ header#header
 
   .navbar.justify-content-end.clearfix
     ul.nav.navbar-expand
-      li
-        = link_to '掲示板リスト', root_path, class: 'nav-link'
     - if user_signed_in?
+      li
+        = link_to '掲示板リスト', root_path, class: 'nav-link'    
       li
         = link_to 'スレッドを立てる', new_board_path, class: 'nav-link'
       li
         = link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'nav-link'
     - elsif admin_signed_in?
+      li
+        = link_to '掲示板リスト', admin_boards_path, class: 'nav-link'    
       li
         = link_to 'ユーザー管理', admin_users_path, class: 'nav-link'
       li

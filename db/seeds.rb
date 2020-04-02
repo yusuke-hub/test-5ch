@@ -29,26 +29,44 @@ User.create!(
     }
   ]
 )
+Category.create!(
+  [
+    {
+      name: 'ニュース速報',
+      status: 1
+    },
+        {
+      name: '芸スポ速報',
+      status: 1
+    },
+        {
+      name: 'なんでも実況J',
+      status: 1
+    }
+  ]
+)
 Board.create!(
   [
     {
       user_id: '1',
-      title: 'hogehoge',
+      title: 'hogehogehogehoge',
       caption: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus quos quidem tenetur aut perspiciatis accusamus, laboriosam odio velit! Reprehenderit consequatur quod laborum, at repellat voluptatibus ab quae impedit asperiores nihil?',
-      image_id: nil
+      image_id: nil,
+      category_id: '1'
     },
     {
       user_id: '2',
       category_id: '2',
-      title: 'hugahuga',
+      title: 'hugahugahogehoge',
       caption: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus quos quidem tenetur aut perspiciatis accusamus, laboriosam odio velit! Reprehenderit consequatur quod laborum, at repellat voluptatibus ab quae impedit asperiores nihil?',
-      image_id: nil
+      image_id: nil,
     },
     {
       user_id: '3',
-      title: 'hoeghuga',
+      title: 'hoeghugahogehoge',
       caption: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus quos quidem tenetur aut perspiciatis accusamus, laboriosam odio velit! Reprehenderit consequatur quod laborum, at repellat voluptatibus ab quae impedit asperiores nihil?',
-      image_id: nil
+      image_id: nil,
+      category_id: '3'
     }
   ]
 )
