@@ -10,6 +10,11 @@ class Admin::CategoriesController < ApplicationController
     @category.save!
     redirect_to admin_categories_path
   end
+	def toggle_status
+		@category = Category.find(params[:category_id])
+		 @category.update(status: @category.toggle_status)
+		redirect_to admin_categories_path
+	end  
   private
     def category_params
       params.require(:category).permit(:name, :status)
